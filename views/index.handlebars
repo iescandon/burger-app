@@ -1,4 +1,9 @@
-{{#each burgers}}
-<p>{{id}}: {{burger}}</p>
-</br>
-{{/each}}
+
+<ul>
+    {{#each burgers}}
+    <p>
+        {{this.id}}: {{this.burger_name}}
+        <button><a href="/{{this.id}}">EAT IT!</a></button>
+    </p>
+    {{/each}}
+</ul>
