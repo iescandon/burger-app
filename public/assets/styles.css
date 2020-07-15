@@ -2,7 +2,8 @@
     text-align: center;
 }
 
-h1 {
+h1,
+li {
     font-family: "Do Hyeon", sans-serif;
     color: white;
     text-shadow: 2px 2px 8px black;
@@ -20,4 +21,16 @@ li {
 
 body {
     background-image: url(./jelly-fish-fields.jpg);
+    background-size: cover;
+}
+
+.submitBtn {
+    font-family: "Do Hyeon", sans-serif;
+    cursor: url(https://cur.cursors-4u.net/toons/too-1/too65.cur), auto !important;
+}
+
+.updateBtn {
+    cursor: url(https://downloads.totallyfreecursors.com/cursor_files/patrickstar.ani),
+        url(https://downloads.totallyfreecursors.com/thumbnails/patrickstar.gif),
+        auto !important;
 }
