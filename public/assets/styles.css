@@ -1,5 +1,6 @@
-.form {
-    text-align: center;
+body {
+    background-image: url(./jelly-fish-fields.jpg);
+    background-size: cover;
 }
 
 h1,
@@ -9,19 +10,22 @@ li {
     text-shadow: 2px 2px 8px black;
 }
 
+ul {
+    padding-left: 175px;
+}
+
 ul,
 li {
     list-style: none;
     margin-bottom: 10px;
 }
 
-.burgerImg {
-    height: 200px;
+.form {
+    text-align: center;
 }
 
-body {
-    background-image: url(./jelly-fish-fields.jpg);
-    background-size: cover;
+.burgerImg {
+    height: 200px;
 }
 
 .submitBtn {
@@ -33,10 +37,6 @@ body {
     cursor: url(https://downloads.totallyfreecursors.com/cursor_files/patrickstar.ani),
         url(https://downloads.totallyfreecursors.com/thumbnails/patrickstar.gif),
         auto !important;
-}
-
-ul {
-    padding-left: 175px;
 }
 
 .burger-eaten {
