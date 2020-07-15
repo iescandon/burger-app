@@ -15,9 +15,9 @@
         <ul>
             {{#each burgers}}
                 {{#if devoured}}
-                <li>
+                <li class="burger-eaten">
                     {{id}}: {{burger_name}}
-                        <button type="submit" class="updateBtn" data-id="{{id}}" data-devoured="{{devoured}}">UN-EAT IT!</button>
+                        {{!-- <button type="submit" class="updateBtn" data-id="{{id}}" data-devoured="{{devoured}}">UN-EAT IT!</button> --}}
                 </li>
                 {{/if}}
             {{/each}}

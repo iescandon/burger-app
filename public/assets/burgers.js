@@ -5,9 +5,10 @@ $(function () {
 
         if (devoured === 0) {
             devoured = 1;
-        } else {
-            devoured = 0;
         }
+        // else {
+        //     devoured = 0;
+        // }
 
         // var data = {
         //     devoured,

@@ -34,3 +34,11 @@ body {
         url(https://downloads.totallyfreecursors.com/thumbnails/patrickstar.gif),
         auto !important;
 }
+
+ul {
+    padding-left: 175px;
+}
+
+.burger-eaten {
+    color: lightblue;
+}
