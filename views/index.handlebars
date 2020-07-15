@@ -1,28 +1,23 @@
 <div class="row">
-    <div class="col-6">
+    <div class="col-6 mt-5">
         <ul>
             {{#each burgers}}
                 {{#unless devoured}}
                 <li>
                     {{id}}: {{burger_name}}
-                    {{!-- <form action="/api/burgers/{{id}}" method="PUT"> --}}
                         <button type="submit" class="updateBtn" data-id="{{id}}" data-devoured="{{devoured}}">EAT IT!</button>
-                    {{!-- </form> --}}
-                    {{!-- <form action="/{{id}}" method="GET">
-                        <button type="submit" class="updateBtn" data-id="{{id}}" data-devoured="{{devoured}}">EAT IT!</button>
-                    </form> --}}
-                    {{!-- <button type="submit" class="updateBtn" data-id="{{id}}" data-devoured="{{devoured}}"><a href="/api/burgers/{{id}}">EAT IT!</a></button>
-                </li> --}}
+                </li>
                 {{/unless}}
             {{/each}}
         </ul>
     </div>
-    <div class="col-6">
+    <div class="col-6 mt-5">
         <ul>
             {{#each burgers}}
                 {{#if devoured}}
                 <li>
                     {{this.id}}: {{this.burger_name}}
+                                            <button type="submit" class="updateBtn" data-id="{{id}}" data-devoured="{{devoured}}">UN-EAT IT!</button>
                 </li>
                 {{/if}}
             {{/each}}

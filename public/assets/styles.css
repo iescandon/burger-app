@@ -1,0 +1,23 @@
+.form {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Do Hyeon", sans-serif;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+ul,
+li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.burgerImg {
+    height: 200px;
+}
+
+body {
+    background-image: url(./jelly-fish-fields.jpg);
+}

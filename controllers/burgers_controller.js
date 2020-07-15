@@ -4,10 +4,7 @@ var router = express.Router();
 
 router.get("/", function (req, res) {
     burger.all(function (data) {
-        var hbsObject = {
-            burgers: data,
-        };
-        res.render("index", hbsObject);
+        res.render("index", { burgers: data });
     });
 });
 
@@ -19,9 +16,9 @@ router.post("/api/burgers", function (req, res) {
 
 router.put("/api/burgers", function (req, res) {
     burger.update(
-        ["devoured"],
+        // ["devoured"],
         [req.body.devoured],
-        ["id"],
+        // ["id"],
         [req.body.id],
         function (result) {
             if (result.changedRows == 0) {

@@ -4,13 +4,15 @@
 	<meta charset="UTF-8">
 		<link rel="stylesheet" href="assets/styles.css" type="text/css" />
 		<title>Eat Da Burger</title>
+		<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	</head>
 	<body>
-		<div class="container">
-			<h1>Eat Da Burger</h1>
+		<div class="container mt-5">
+			<h1 class="text-center">Eat Da Burger</h1>
+			<img src="/assets/burger.png" alt="burger icon" class="burgerImg d-block mx-auto"/>
 			{{{ body }}}
-			<div>
+			<div class="form mt-5">
 				<form action="/api/burgers" method="POST">
 					<textarea type="text" name="burger"></textarea>
 
