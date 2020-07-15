@@ -1,4 +1,5 @@
 var connection = require("../config/connection.js");
+const { values } = require("mysql2/lib/constants/charset_encodings");
 
 var orm = {
     selectAll: function (table, cb) {
@@ -15,9 +16,12 @@ var orm = {
             cb(result);
         });
     },
-    updateOne: function (table, column, value, cb) {
-        const query = "UPDATE ?? SET ?? = ?";
-        connection.query(query, [table, column, value], function (err, result) {
+    updateOne: function (table, column, value, col, val, cb) {
+        const query = "UPDATE ?? SET ?? = ? WHERE ?? = ?";
+        connection.query(query, [table, column, value, col, val], function (
+            err,
+            result
+        ) {
             if (err) throw err;
             console.log(result);
             cb(result);
