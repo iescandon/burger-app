@@ -9,15 +9,15 @@ $(function () {
             devoured = 0;
         }
 
-        var data = {
-            devoured,
-            id,
-        };
+        // var data = {
+        //     devoured,
+        //     id,
+        // };
         // Send the PUT request.
-        $.ajax("/api/burgers", {
+        $.ajax("/api/burgers/" + id, {
             type: "PUT",
-            // data: { devoured },
-            data: data,
+            data: { devoured },
+            // data: data,
         }).then(function () {
             console.log("Devoured!");
             // Reload the page to get the updated list
